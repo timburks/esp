@@ -51,7 +51,7 @@ pex_binary(
     ],
     main = "start_esp.py",
     reqs = [
-        "certifi",
+        "certifi==2021.05.30",
         "mako>=1.0.4",
         "oauth2client>=3.0.0",
         "pyasn1>=0.1.9",
