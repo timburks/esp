@@ -52,10 +52,10 @@ pex_binary(
     main = "start_esp.py",
     reqs = [
         "certifi==2021.05.30",
-        "mako>=1.0.4",
-        "oauth2client>=3.0.0",
-        "pyasn1>=0.1.9",
-        "pyasn1-modules>=0.0.8",
+        "mako==1.0.4",
+        "oauth2client==3.0.0",
+        "pyasn1==0.1.9",
+        "pyasn1-modules==0.0.8",
         "markupsafe==1.1.1",
         "urllib3==1.16",
         # rsa 4.3 is the last version support Python 2
