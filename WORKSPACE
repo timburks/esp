@@ -82,6 +82,11 @@ git_repository(
 
 load("@io_bazel_rules_python//python:pip.bzl", "pip_repositories", "pip_import")
 
+pip_import(
+    name = "grpc_python_dependencies",
+    requirements = "//:requirements.bazel.txt",
+)
+
 load("@com_github_grpc_grpc//bazel:grpc_deps.bzl", "grpc_deps", "grpc_test_only_deps")
 
 grpc_deps()

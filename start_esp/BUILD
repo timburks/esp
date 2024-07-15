@@ -1,4 +1,3 @@
-# Copyright (C) Extensible Service Proxy Authors
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -53,11 +52,11 @@ pex_binary(
     reqs = [
         "certifi==2021.05.30",
         "mako==1.0.4",
-        "oauth2client==3.0.0",
+        "oauth2client==4.1.0",
         "pyasn1==0.1.9",
         "pyasn1-modules==0.0.8",
         "markupsafe==1.1.1",
-        "urllib3==1.16",
+        "urllib3>=1.23, <1.26.18",
         # rsa 4.3 is the last version support Python 2
         "rsa==4.3",
     ],

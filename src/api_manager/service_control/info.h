@@ -84,10 +84,17 @@ struct CheckResponseInfo {
   bool service_is_activated;
   // Consumer project id
   std::string consumer_project_id;
+  // The api key uid of the request.
+  std::string api_key_uid;
+
+  // The check has failed because of network failure.
+  bool is_network_failure;
 
   // By default api_key is valid and service is activated.
   // They only set to false by the check response from server.
-  CheckResponseInfo() : is_api_key_valid(true), service_is_activated(true) {}
+  CheckResponseInfo() : is_api_key_valid(true),
+                        service_is_activated(true), 
+                        is_network_failure(false) {}
 };
 
 struct QuotaRequestInfo : public OperationInfo {
